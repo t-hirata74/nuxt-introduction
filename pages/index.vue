@@ -32,6 +32,10 @@
         </li>
       </ul>
     </div>
+
+    <div>
+      <img src="~/assets/cat.jpg">
+    </div>
   </div>
 </template>
 
