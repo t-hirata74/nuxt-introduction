@@ -51,10 +51,20 @@
 
     </div>
 
+    <div>
+      <Counter></Counter>
+      <hr>
+      <Counter></Counter>
+      <hr>
+      <Counter></Counter>
+      <hr>
+    </div>
   </div>
 </template>
 
 <script>
+import Counter from '~/components/Counter.vue'
+
 const axios = require('axios')
 let url = 'https://jsonplaceholder.typicode.com/users'
 
@@ -70,6 +80,9 @@ export default {
       console.log(error)
       // error({ users: e.response.status, message: 'Error!'})
     }))
+  },
+  components: {
+    Counter
   }
 }
 </script>
